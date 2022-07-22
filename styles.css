@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: norse-font;
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+.left-banner {
+    position: relative;
+    flex: 1;
+}
+
+.right-banner {
+    flex: 2;
+}
+
+img[alt~="background-image"]  {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.card {
+    display: flex;
+    position: absolute;
+    top: 25vh;
+    left: 50px;
+}
+
+.title {
+    display: flex;
+    font-family: norse-font, sans-serif;
+    color: white;
+    font-size: 50px;
+    align-items: center;
+    padding-left: 8px;
+}
+
+img[alt~="logo"] {
+    height: 110px;
+}

@@ -1,43 +1,61 @@
-body {
-    display: flex;
-    height: 100vh;
-}
-
 @font-face {
     font-family: norse-font;
     src: url(/fonts/Norse-Bold.otf);
 }
 
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(254, 254, 255);
+}
+
 .left-banner {
-    position: relative;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
 }
 
 .right-banner {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 35px;
 }
 
-img[alt~="background-image"]  {
+.background-image {
     max-width: 100%;
     min-height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 2px #DDD;
+
 }
 
 .card {
     display: flex;
-    position: absolute;
-    top: 25vh;
-    left: 50px;
-}
+    position: relative;
+    top: -75vh;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+}    
 
-.title {
-    display: flex;
+.card-title {
     font-family: norse-font, sans-serif;
     color: white;
     font-size: 50px;
-    align-items: center;
     padding-left: 8px;
 }
 
-img[alt~="logo"] {
+.card-image {
     height: 110px;
+}
+
+.text {
+    padding-right: 100px;
+    font-size: 16px;
+    font-weight: bold;
 }
